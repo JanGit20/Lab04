@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ściąga UKOS - Bash</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>UKOS — Terminal Bash</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Strona główna</a></li>
+        <li><a href="bash.html">UKOS — Bash</a></li>
+        <li><a href="git.html">WARP — Git</a></li>
+        <li><a href="dotnet.html">PRG1 — .NET</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Wprowadzenie</h2>
+      <p>Powłoka Bash jest domyślnym interpreterem poleceń w wielu dystrybucjach Linuksa. Umożliwia sprawne zarządzanie plikami, procesami oraz automatyzację zadań systemowych.</p>
+    </section>
+
+    <section>
+      <h2>Zasady bezpiecznej pracy w terminalu</h2>
+      <div class="info-note">
+        <p>Polecenia w powłoce systemowej wykonują się natychmiastowo i zazwyczaj nie przenoszą plików do kosza.</p>
+      </div>
+      <ol>
+        <li>Zawsze sprawdzaj bieżącą ścieżkę roboczą przed uruchomieniem komend modyfikujących pliki.</li>
+        <li>Zachowaj ostrożność przy używaniu flag wymuszenia i rekurencji (np. <code>-rf</code>).</li>
+        <li>Używaj autouzupełniania klawiszem <strong>Tab</strong>, aby uniknąć literówek w ścieżkach.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Tabela poleceń Bash</h2>
+      <div class="table-scroll">
+        <table class="command-table">
+          <caption>Zestawienie podstawowych komend powłoki</caption>
+          <thead>
+            <tr>
+              <th>Polecenie</th>
+              <th>Przykład</th>
+              <th>Opis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>pwd</code></td>
+              <td><code>pwd</code></td>
+              <td>Wyświetla pełną ścieżkę bieżącego katalogu roboczego (print working directory).</td>
+            </tr>
+            <tr>
+              <td><code>ls</code></td>
+              <td><code>ls -la</code></td>
+              <td>Wypisuje zawartość katalogu wraz z plikami ukrytymi i uprawnieniami.</td>
+            </tr>
+            <tr>
+              <td><code>cd</code></td>
+              <td><code>cd ..</code></td>
+              <td>Zmienia bieżący katalog roboczy.</td>
+            </tr>
+            <tr>
+              <td><code>mkdir</code></td>
+              <td><code>mkdir docs</code></td>
+              <td>Tworzy nowy katalog o podanej nazwie.</td>
+            </tr>
+            <tr>
+              <td><code>touch</code></td>
+              <td><code>touch script.sh</code></td>
+              <td>Tworzy pusty plik lub aktualizuje czas modyfikacji istniejącego.</td>
+            </tr>
+            <tr>
+              <td><code>cp</code></td>
+              <td><code>cp plik.txt kopia.txt</code></td>
+              <td>Kopiuje pliki lub całe katalogi (z flagą <code>-r</code>).</td>
+            </tr>
+            <tr>
+              <td><code>mv</code></td>
+              <td><code>mv stary.txt nowy.txt</code></td>
+              <td>Przenosi lub zmienia nazwę pliku bądź katalogu.</td>
+            </tr>
+            <tr>
+              <td><code>rm</code></td>
+              <td><code>rm plik.txt</code></td>
+              <td>Trwale usuwa pliki z dysku.</td>
+            </tr>
+            <tr>
+              <td><code>cat</code></td>
+              <td><code>cat config.json</code></td>
+              <td>Wyświetla zawartość pliku tekstowego bezpośrednio w terminalu.</td>
+            </tr>
+            <tr>
+              <td><code>clear</code></td>
+              <td><code>clear</code></td>
+              <td>Czyści bieżący widok okna terminala.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Materiały i dokumentacja</h2>
+      <ul>
+        <li><a href="../docs/ukos/bash.md">Oryginalna ściąga projektowa (bash.md)</a></li>
+        <li><a href="https://www.gnu.org/software/bash/manual/" target="_blank" rel="noopener noreferrer">Oficjalny GNU Bash Manual</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projekt edukacyjny — Baza wiedzy IT</p>
+  </footer>
+
+</body>
+</html>
