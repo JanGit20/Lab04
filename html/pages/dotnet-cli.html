@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ściąga PRG1 - .NET CLI</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>PRG1 — Narzędzia .NET CLI</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Strona główna</a></li>
+        <li><a href="bash.html">UKOS — Bash</a></li>
+        <li><a href="git.html">WARP — Git</a></li>
+        <li><a href="dotnet-cli.html">PRG1 — .NET CLI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Wprowadzenie do interfejsu .NET CLI</h2>
+      <p>Interfejs wiersza poleceń .NET (CLI) to wieloplatformowy zestaw narzędzi służący do tworzenia, budowania, uruchamiania i publikowania aplikacji opartych na platformie .NET.</p>
+    </section>
+
+    <section>
+      <h2>Sekwencja utworzenia i uruchomienia aplikacji</h2>
+      <p>Poniższy blok przedstawia kompletną procedurę przygotowania i startu nowego projektu konsolowego:</p>
+      <pre><code># 1. Sprawdzenie wersji oraz zainstalowanych SDK
+dotnet --version
+dotnet --list-sdks
+
+# 2. Utworzenie nowego projektu konsolowego w katalogu App
+dotnet new console -o App
+
+# 3. Wejście do folderu projektu
+cd App
+
+# 4. Przywrócenie zależności projektu
+dotnet restore
+
+# 5. Kompilacja projektu
+dotnet build
+
+# 6. Uruchomienie aplikacji
+dotnet run
+
+# 7. Czyszczenie plików wyjściowych kompilacji
+dotnet clean</code></pre>
+    </section>
+
+    <section>
+      <h2>Tabela poleceń .NET CLI</h2>
+      <div class="table-scroll">
+        <table class="command-table">
+          <caption>Zestawienie najważniejszych poleceń .NET</caption>
+          <thead>
+            <tr>
+              <th>Polecenie</th>
+              <th>Opis działania</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>dotnet --version</code></td>
+              <td>Wyświetla aktualnie używaną wersję zestawu .NET SDK.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet --list-sdks</code></td>
+              <td>Wypisuje listę wszystkich zainstalowanych wersji .NET SDK w systemie.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet new list</code></td>
+              <td>Wyświetla listę dostępnych szablonów projektów możliwych do wygenerowania.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet new console</code></td>
+              <td>Tworzy nowy projekt aplikacji konsolowej.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet restore</code></td>
+              <td>Przywraca zależności i narzędzia zdefiniowane w pliku projektu.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet build</code></td>
+              <td>Kompiluje kod źródłowy projektu oraz wszystkie jego zależności do postaci binarnej.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet run</code></td>
+              <td>Kompiluje (jeśli potrzeba) i natychmiast uruchamia aplikację.</td>
+            </tr>
+            <tr>
+              <td><code>dotnet clean</code></td>
+              <td>Usuwa pliki wyjściowe i tymczasowe wygenerowane podczas kompilacji.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dokumentacja i źródła</h2>
+      <ul>
+        <li><a href="../docs/prg1/dotnet-cli.md">Lokalne notatki (dotnet-cli.md)</a></li>
+        <li><a href="https://learn.microsoft.com/pl-pl/dotnet/core/tools/" target="_blank" rel="noopener noreferrer">Oficjalna dokumentacja .NET CLI</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projekt edukacyjny — Baza wiedzy IT</p>
+  </footer>
+
+</body>
+</html>
