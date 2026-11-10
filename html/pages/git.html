@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ściąga Git - WARP</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>WARP — Git &amp; GitHub</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Strona główna</a></li>
+        <li><a href="bash.html">UKOS — Bash</a></li>
+        <li><a href="git.html">WARP — Git</a></li>
+        <li><a href="dotnet.html">PRG1 — .NET</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Wprowadzenie do Gita</h2>
+      <p>Git to rozproszony system kontroli wersji pozwalający na śledzenie historii zmian w kodzie oraz efektywną współpracę zespołową.</p>
+    </section>
+
+    <section>
+      <h2>Standardowa procedura pracy</h2>
+      <ol>
+        <li><strong>Synchronizacja:</strong> pobranie najnowszego stanu gałęzi głównej (<code>git pull</code>).</li>
+        <li><strong>Branch:</strong> utworzenie i przejście na nową gałąź zadaniową (<code>git switch -c nazwa-brancha</code>).</li>
+        <li><strong>Zmiana:</strong> edycja plików, implementacja funkcjonalności lub poprawki w kodzie.</li>
+        <li><strong>Commit:</strong> przygotowanie zmian i zapisanie lokalnego punktu kontrolnego (<code>git add</code>, <code>git commit</code>).</li>
+        <li><strong>Push:</strong> wysłanie gałęzi ze zmianami do zdalnego repozytorium (<code>git push</code>).</li>
+        <li><strong>PR:</strong> utworzenie Pull Requesta na GitHubie i poddanie kodu procesowi code review.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Tabela poleceń Git</h2>
+      <div class="table-scroll">
+        <table class="command-table">
+          <caption>Zestawienie najważniejszych poleceń</caption>
+          <thead>
+            <tr>
+              <th>Polecenie</th>
+              <th>Opis działania</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>git clone &lt;url&gt;</code></td>
+              <td>Klonuje istniejące zdalne repozytorium na lokalny komputer.</td>
+            </tr>
+            <tr>
+              <td><code>git status</code></td>
+              <td>Wyświetla stan drzewa roboczego i przygotowanych plików.</td>
+            </tr>
+            <tr>
+              <td><code>git add &lt;plik&gt;</code></td>
+              <td>Dodaje zmiany z obszaru roboczego do indeksu (staging area).</td>
+            </tr>
+            <tr>
+              <td><code>git commit -m "opis"</code></td>
+              <td>Tworzy nowe zatwierdzenie ze zmian znajdujących się w indeksie.</td>
+            </tr>
+            <tr>
+              <td><code>git push</code></td>
+              <td>Wysyła lokalne zatwierdzenia na zdalny serwer (np. GitHub).</td>
+            </tr>
+            <tr>
+              <td><code>git pull</code></td>
+              <td>Pobiera i scala zmiany ze zdalnego repozytorium do bieżącej gałęzi.</td>
+            </tr>
+            <tr>
+              <td><code>git fetch</code></td>
+              <td>Pobiera metadane i historię ze zdalnego repozytorium bez scalania kodu.</td>
+            </tr>
+            <tr>
+              <td><code>git branch</code></td>
+              <td>Wyświetla listę gałęzi lokalnych lub tworzy nową gałąź.</td>
+            </tr>
+            <tr>
+              <td><code>git switch &lt;nazwa&gt;</code></td>
+              <td>Przełącza bieżący kontekst pracy na wskazaną gałąź.</td>
+            </tr>
+            <tr>
+              <td><code>git log</code></td>
+              <td>Prezentuje historię zatwierdzeń (commitów) w bieżącej gałęzi.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Przydatne materiały</h2>
+      <ul>
+        <li><a href="../docs/warp/git.md">Lokalne notatki i materiały (git.md)</a></li>
+        <li><a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">Oficjalna dokumentacja Git</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projekt edukacyjny — Baza wiedzy IT</p>
+  </footer>
+
+</body>
+</html>
